@@ -1,11 +1,11 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btn1: Button
@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     private var playerTurn: Int = 0
     private var count: Int = 0
+    @SuppressLint("SetTextI18n")
     fun check(view: View) {
 
         val btnCurrent: Button = view as Button
@@ -103,6 +104,7 @@ class MainActivity : AppCompatActivity() {
         btn9.text = ""
         text1.text=""
         count=0
+        playerTurn=0
     }
 
 
